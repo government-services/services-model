@@ -1,44 +1,41 @@
 
-
 ## Department of Agriculture
 
 * Done
-** 
+  * 
 * Requested
-** SNAP
-** WIC
+  * SNAP
+  * WIC
 
 ## Department of Education 
 
 * Done
-** 
+  * 
 * Requested
-** Student Loan Assistance
+  * Student Loan Assistance
 
 
 ## Department of Labor
 
-
 * Done
-** 
+  * 
 * Requested
-** UI
-** WIA
+  * UI
+  * WIA
 
 ## Department of Health and Human Services
 
-
 * Done
-** 
+  * 
 * Requested
-** Medicaid
-** ACA (maybe HRSA Health Centers)
+  * Medicaid
+  * ACA (maybe HRSA Health Centers)
 
 
 ## Department of Veterans Affairs 
 
 * Done
-** 
+  * 
 * Requested
-** Offices/Program Locator
+  * Offices/Program Locator
 
