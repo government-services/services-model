@@ -1,0 +1,36 @@
+{
+	"@context": "http://schema.org/",
+	"@type": "GovernmentService",
+	"@id": "http://www.myflfamilies.com/service-programs/access-florida-food-medical-assistance-cash/food-assistance-and-suncap",
+	"name": "Food Assistance Program",
+	"alternateName": "Supplemental Nutrition Assistance Program (SNAP)",
+	"alternateName": "Food Stamps",
+	"audience":{
+		"@type": "CivicAudience",
+		"audienceType": ["Low-Income"]
+	},
+	"Description": "The Food Assistance Program provides purchasing assistance to low-income residents of Florida including working families, the elderly and the disabled. ",
+	"provider": {
+		"@type": "GovernmentOrganization",
+		"name": "Florida Department of Children and Families",
+		"url": "http://www.myflfamilies.com/"
+	},
+	"serviceArea": {
+		"@type": "State",
+		"name": "ocd-division/country:us/state:fl"
+	},
+	"serviceChannel": {
+		"@type": "ServiceChannel",
+		"serviceUrl": "http://www.myflorida.com/accessflorida/",
+		"servicePhone": "1-866-762-2237",
+		"serviceLocationUrl": "http://www.dcf.state.fl.us/access/CPSLookup/search.aspx",
+		"processingTime": "30 days"
+	},
+	"serviceType": {
+		"@type": "ServiceType",
+		"name": "Food Benefits",
+		"serviceTaxonomy": "http://openeligibility.org/",
+		"serviceType": "107-02-02-01"
+	},
+	"url": "http://www.myflfamilies.com/service-programs/access-florida-food-medical-assistance-cash/food-assistance-and-suncap"
+}
