@@ -3,6 +3,7 @@ Documenting Government Services
 
 ## Overview
 
+This is a prototype project to quickly and easily expose information about government services in such a way that third parties can better share them with the public.  
 
 ## Why Do This?
 
