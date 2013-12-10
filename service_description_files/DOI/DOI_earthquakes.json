@@ -1,0 +1,30 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "GovernmentService",
+    "@id": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/",
+    "name": "Real-time information on earthquakes worldwide.",
+    "audience": {
+        "@type": "CivicAudience",
+        "audienceType": ["individuals"]
+    },
+    "Description": "Earthquake information is available in real-time and via several feeds and formats, including QuakeML (XML), GeoJSON, RSS, Twitter, CSV, KML, and SMS.",
+    "provider": {
+        "@type": "GovernmentOrganization",
+        "name": "U.S. Geological Survey",
+        "url": "http://www.usgs.gov",
+        "logo": "http://www.usgs.gov/images/header_graphic_usgsIdentifier_white.jpg"
+    },
+    "serviceArea": {
+        "@type": "country",
+        "name": "ocd-division/country:us/country:united_states"
+    },
+    "availableChannel" : {
+        "@type": "ServiceChannel",
+        "serviceUrl": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/",
+    },
+    "serviceType": {
+        "@type": "ServiceType",
+        "name": "Disaster Preparedness & Response",
+		"serviceTaxonomy": "http://openeligibility.org/",
+    }
+}
