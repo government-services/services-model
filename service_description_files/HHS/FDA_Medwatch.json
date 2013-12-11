@@ -1,0 +1,33 @@
+{
+	"@context": "schema.org",
+	"@type": "GovernmentService",
+	"name": "MedWatch",
+	"serviceType": "Adverse Event Reporting Tool",
+	"Description": "Reporting tool that enables citizens to alert the FDA to adverse events that they observe or suspect for human medical products, including serious drug side effects, product use errors, product quality problems, and therapeutic failures.",
+	"serviceArea": {
+		"@type": "AdministrativeArea",
+		"name": "United States of America"
+	},
+	"audience": {
+		"@type": "CivicAudience",
+		"audienceType": "Individuals"
+	},
+	"audience": {
+		"@type": "CivicAudience",
+		"audienceType": "Medical Professionals"
+	},
+	"provider": {
+		"@type": "GovernmentOrganization",
+		"name": "US Food and Drug Administration",
+		"url": "http://www.fda.gov",
+		"logo": "http://www.fda.gov/ucm/groups/fdagov-public/documents/image/ucm349567.png"
+	},
+	"serviceArea": {
+		"@type": "AdministrativeArea",
+		"name": "United States",
+	},
+	"availableChannel" : {
+		"@type": "ServiceChannel",
+		"serviceUrl": "https://www.accessdata.fda.gov/scripts/medwatch/",
+	},
+}
