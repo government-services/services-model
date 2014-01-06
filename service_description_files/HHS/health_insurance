@@ -1,0 +1,72 @@
+<!--Only for states that are NOT running their own health insurance exchanges.-->
+
+{
+        "@context": "schema.org",
+        "@type": "GovernmentService",
+        "name": "Find Local Help with Health Insurance Enrollment",
+        "serviceType": 
+                {
+                “@context”: “openeligibility.org”,
+                “@services”: “Health Insurance”,
+                }
+<!--
+For serviceType I wanted to use OpenEligibility. Based on what I could find on that github repo: https://github.com/auntbertha/openeligibility/blob/master/taxonomy, I summarized as above. Below, I have tried to illustrate my path just in case in needs to be revised. I assumed that if I used the most specific category for "@services", that all higher order info would also be captured.:
+
+  <?xml version="2.0" encoding="UTF-8"?>
+  <taxonomy>
+          <services>
+              <top_level id="1106" title="Health">
+                  <second_level id="1199" title="Help Pay for Healthcare">
+                      <third_level id="1202" title="Health Insurance">
+                                  </third_level>
+                          </second_level>
+                  </top_level>  
+          </services>
+  </taxonomy>
+
+-->
+        "description": "Find local people and organizations that are certified to help you enroll in health insurance. In-Person Assistance (IPA) programs and Certified Application Counselor (CAC) organizations can help you navigate the federally facilitated health insurance Marketplace. They can help you determine whether or not you qualify for financial assistance (i.e., subsidy) and evaluate what type of coverage might be best for you and your family. You can also receive help enrolling in Children’s Health Insurance Programs (CHIP), and Medicaid if applicable. These government programs help you pay for health care.”,
+        "serviceArea": {
+                "@type": "AdministrativeArea",
+                "name": "United States of America"
+        },
+        "audience": {
+                "@type": "CivicAudience",
+                "audienceType": "Individuals"
+        },
+        "audience": {
+                "@type": "CivicAudience",
+                "audienceType": "Medical Professionals"
+        },
+        "audience": {
+                "@context": "openeligibility.org",
+                “@situations”: “Uninsured”
+        },
+<!--
+For audience I wanted to include OpenEligibility situations. Based on what I could find on that github repo: https://github.com/auntbertha/openeligibility/blob/master/taxonomy, I summarized as above. Below, I have tried to illustrate my path just in case in needs to be revised. I assumed that if I used the most specific category for "@situations", that all higher order info would also be captured. I did not use General because the schema.org audiences should capture general audiences:
+  <?xml version="2.0" encoding="UTF-8"?>
+  <taxonomy>
+          <situations>
+              <top_level id="20064" title="Insurance">
+                  <second_level id="20065" title="Uninsured">
+                          </second_level>
+                  </top_level>  
+          </situations>
+  </taxonomy>
+-->
+        "provider": {
+                "@type": "GovernmentOrganization",
+                "name": "Centers for Medicare and Medicaid Services (CMS)",
+                "url": "http://www.cms.gov",
+                "logo": "http://assets.cms.gov/resources/cms/images/logo/site-logo.png"
+        },
+        "serviceArea": {
+                "@type": "AdministrativeArea",
+                "name": "United States",
+        },
+        "availableChannel" : {
+                "@type": "ServiceChannel",
+<!-- Note that I have just directed you to the json file. There are other urls and widget available. -->            
+        "serviceUrl": "http://data.healthcare.gov/resource/6b77-3589.json“,
+        },
+}
