@@ -1,0 +1,68 @@
+<!--Using data.cms.gov API endpoint rather than findhealthcare.hrsa.gov downloadable file. Unfortuantely the "look alikes" are not here. -->
+
+{
+        "@context": "schema.org",
+        "@type": "GovernmentService",
+        "name": "Find a health center",
+        "serviceType":
+                {
+                “@context”: “openeligibility.org”,
+                “@services”: “Medical Care”,
+                “@services”: “Dental Care”,
+                },
+
+<!--For serviceType I wanted to use OpenEligibility. Based on what I could find on that github repo: https://github.com/auntbertha/openeligibility/blob/master/taxonomy, I summarized as above. Below, I have tried to illustrate my path just in case in needs to be revised. I assumed that if I used the most specific category for "@services", that all higher order info would also be captured.:
+
+  <?xml version="2.0" encoding="UTF-8"?>
+  <taxonomy>
+          <services>
+              <top_level id="1106" title="Health">
+                  <second_level id="1199" title="Medical Care">
+                          </second_level>
+                  </top_level>
+          </services>
+  </taxonomy>
+
+-->
+       "description": "This is a community health center that may provide checkups, illness, pregnancy, immunizations, dental, prescription drugs, mental health and substance abuse care. You pay what you can afford, based on your income. It received federal funding.",
+       "serviceArea": {
+                "@type": "AdministrativeArea",
+                "name": "United States of America"
+        },
+        "audience": {
+                "@type": "CivicAudience",
+                "audienceType": "Individuals"
+                "audienceType": "Medical Professionals"
+        },
+        "audience": {
+                "@context": "openeligibility.org",
+                “@situations”: “Uninsured”,
+                “@situations”: “Pregnant”
+                “@situations”: “Substance Dependency”
+                “@situations”: “Mental Illness”
+                “@situations”: “Low-Income”
+        },
+
+<!-- For audience I wanted to include OpenEligibility situations. The next thing will default back to schema.org, right?-->
+
+        "provider": {
+                "@type": "MedicalEntity",
+                "name": "Federally Qualified Health Center",
+                "sameAs": "https://en.wikipedia.org/wiki/Federally_Qualified_Health_Center"
+                "url": "http://www.cms.gov/Center/Provider-Type/Federally-Qualified-Health-Centers-FQHC-Center.html"
+        },
+        "provider": {
+                "@type": "Organization",
+                "logo": "http://www.nachc.com/client/FQHCLogoSM.jpg"
+        },
+        "serviceArea": {
+                "@type": "AdministrativeArea",
+                "name": "United States",
+        },
+        "availableChannel" : {
+                "@type": "ServiceChannel",
+
+<!-- Note that I have just directed you to the json file. There are other urls and widget available. -->
+        "serviceUrl": "http://data.cms.gov/resource/re8s-thbg.json",
+        },
+}
