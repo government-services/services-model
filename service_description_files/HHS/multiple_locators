@@ -1,0 +1,23 @@
+http://locator.aids.gov/data-how-to.html
+
+How do I access the API? Through http://locator.aids.gov/data. The following parameters are available:
+zip Perform a search by ZIP Code. Must be a 5 digit number.
+lat & long Perform a search using latitude and longitude coordinates. Lat and long are rounded to 3 decimal places for consistency in search results. If lat, long and zip are provided, lat and long will be ignored.
+services
+
+A comma separated list of the types of services to search. The following are the currently available service types:
+
+    HIV testing
+    housing (living with HIV/AIDS)
+    clinics (HRSA FQHC & lookalikes)
+    ryanwhite (HIV/AIDS treatment centers)
+    mentalhealth (SAMHSA)
+    substanceabuse (SAMHSA)
+    familyplanning (OPA)
+
+distance Search by distance in miles from the provided location. Accepts values between 1 and 50 in increments of 5. Invalid values will be clamped to the nearest multiple of 5. If no distance is provided, defaults to 1 mile.
+format
+
+Determines the format of the returned data. Currently available formats are: json (default), html
+
+callback If a callback parameter is included, the response will be sent using JSON-P.
