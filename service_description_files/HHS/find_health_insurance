@@ -1,0 +1,33 @@
+https://finder.healthcare.gov/services
+
+HealthCare Finder API
+In the upcoming months, changes will be made to the API for accessing private plan data. Additional details on the API changes will be announced on this site and via email for registered users in advance of the rollout.
+Overview
+
+The HealthCare Finder API (API) accepts an XML (application/xml) request via a post and returns XML as a response. All requests to the API are currently stateless.
+
+Two sets of data available via the API
+Public Options:
+
+Accepts a set of criteria related to audience and situation and returns a set of public options that may be available.
+
+When a request is sent to the API all the qualifying options are returned. The options are ordered based on a relevance set by CMS/CCIIO. Options that are more relevant will occur first.
+
+All Public Options will be returned from a single request eliminating the need to make multiple requests.
+
+The Public Option Nodes returned will contain all the information needed for display to end users with the exception of CHIP and Medicaid benefits and disclaimers. Since benefits and disclaimers can be shared between CHIP and Medicaid, this data is returned in separate node.
+Private Options:
+
+Individual Plan Calls: Accepts location, plan effective date, and family members and returns a list of plans that are available for the request details. This portion of the API can also be used to get specific details of plans.
+
+    PlansForIndividualOrFamily: This request will return a list of plans based on census data, location, and effective date. Results can be filtered, sorted and paginated.
+    PlanDetailsForIndividualOrFamily: This request will return a single plan based on census data, location, and effective date and plan id.
+
+Small Group Calls: Accepts location, plan effective date, and number of employees and returns a list of products that are available for the request details. This portion of the API can also be used to get specific details of products.
+
+    ProductsForSmallGroup: This request will return a list of products based on number of employees, location and effective date. Results can be filtered, sorted and paginated
+    ProductDetailsForSmallGroup: This request will return a single product based on product id.
+
+Shared Call: Accepts postal code and will return county(s) / State(s) information. Offers validation of postal code and State combinations.
+
+    GetCountiesForPostalcode: This request is used to get valid county(s) in a postal code. Some counties and postal codes cross state lines. Since plans are offered based on county and state, this service offers a way to get valid combinations based on postal code.
